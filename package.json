@@ -1,0 +1,21 @@
+{
+  "name": "virtualscraper",
+  "version": "1.0.0",
+  "description": "Browser emulator capable of receiving local websocket requests",
+  "main": "index.js",
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "events": "^3.3.0",
+    "nanoid": "^4.0.0",
+    "puppeteer": "^13.2.0",
+    "puppeteer-cluster": "^0.23.0",
+    "puppeteer-extra": "^3.2.3",
+    "puppeteer-extra-plugin-recaptcha": "^3.5.0",
+    "puppeteer-extra-plugin-stealth": "^2.9.0",
+    "query-selector-shadow-dom": "^1.0.0",
+    "ws": "^8.6.0"
+  }
+}

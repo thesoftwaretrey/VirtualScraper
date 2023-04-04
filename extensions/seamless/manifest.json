@@ -1,0 +1,45 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "browser_action": {
+      "default_icon": {
+         "16": "img/icon-48.png",
+         "24": "img/icon-48.png",
+         "32": "img/icon-48.png"
+      }
+   },
+   "commands": {
+      "_execute_browser_action": {
+         "description": "Opens the Seamless.AI sidebar",
+         "suggested_key": {
+            "default": "Alt+S"
+         }
+      }
+   },
+   "content_security_policy": "default-src 'self';script-src 'self' https://cdnjs.cloudflare.co https://cdnjs.cloudflare.com 'sha256-NdO0hdeIIwj7CeRjge/NtaBQ3ni+d0lAnW7p0/jBHE0=' 'unsafe-eval';connect-src 'self' https://login.seamless.ai https://api.seamless.ai https://media.licdn.com ws://*.amazonaws.com/ wss://*.amazonaws.com/ https://api.rollbar.com/ 'unsafe-eval';frame-src https://www.loom.com/ 'unsafe-eval';object-src 'self';style-src * 'unsafe-inline' 'self' blob:;img-src * 'self' 'unsafe-inline' 'unsafe-eval' data:;font-src https://cdn.jsdelivr.net/npm/rsuite/dist/styles/fonts/rsuite-icon-font.woff https://cdn.jsdelivr.net/npm/rsuite/dist/styles/fonts/rsuite-icon-font.ttf https://fonts.gstatic.com 'unsafe-eval';",
+   "description": "Find perfect emails, phone numbers and insights for anyone using Seamless.ai - 100% Free!",
+   "differential_fingerprint": "1.7260e3a6872fa0bb049dbb9110a0c552afaa3445d433c8a3d3abb59f1a143178",
+   "externally_connectable": {
+      "ids": [ "dbepenphjfofmnjmlacfcdehikakmaap" ],
+      "matches": [ "*://mail.google.com/*", "*://login.seamless.ai/*" ]
+   },
+   "icons": {
+      "128": "img/icon-128.png",
+      "16": "img/icon-48.png",
+      "32": "img/icon-48.png",
+      "48": "img/icon-48.png",
+      "96": "img/icon-128.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoRDchjVqTfMvDAXMkkvS/KtAt3tXEJAPrVUuhmgOiOSsT6gF1UAkbBmObURjnWFtbGv1yrIgK/hrGaiJunClJ+JIpEumPutzfU2olPDwuto1D1Wt+3UakAnmSrrcqx3X/ixgTAH+b7B+lwSa50F4so94a1RqW/scfiK6efxPEptY0cA0ttrYcYo26JyVjNCi8BwFzjcLN2fq+PVJbi48JCslf9k8wvCs8cZic2UlLgku0eEXjTHmGLryBKsVFfTGs7lCkfuQ81E4h7jqKeFJc02pPymT/Vr6BJcpz0q0YKKgp/u+gC8q3ZwWgzMxNazKqzbMLQiMLUQDbPqkKxlSzQIDAQAB",
+   "manifest_version": 2,
+   "name": "Seamless.AI",
+   "options_ui": {
+      "open_in_tab": false,
+      "page": "options.html"
+   },
+   "permissions": [ "\u003Call_urls>", "alarms", "storage", "webNavigation", "cookies" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "11.38.14",
+   "web_accessible_resources": [ "flyout.html", "js/gmail.bundle.js" ]
+}
